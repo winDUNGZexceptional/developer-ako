@@ -7,9 +7,9 @@ body {
     background-color: #8cc0b6;
 }
 
-header.container-fluid {
+/*header.container-fluid {
     padding:0px;
-}
+}*/
 
 main {
     margin-top: 75px;
@@ -26,7 +26,6 @@ main {
     position: absolute;
     top: 50%;
     left: 50%;
-    /*animation:float 2.5s infinite;*/
     animation:leftRotate 3s infinite;
 }
 
@@ -37,7 +36,6 @@ main {
     width: 100%;
     height: 1px;
     box-shadow:0px 10px 10px rgba(0,0,0,0.4);
-    /*animation:non-float 2.5s infinite;*/
 }
 
 .header-head span,
@@ -53,6 +51,7 @@ main {
         1px -1px 0 #fff;
     cursor: crosshair;
 }
+
 .press2play-container,
 .header-head span::selection ,
 .header-head h1::selection {
@@ -73,9 +72,6 @@ main {
 }
 
 .navbar {
-/*    position:fixed;
-    top:0px;
-    left:0px;*/
     width:100%; 
     background-color: #EE804E;
     border-radius: 0px;
@@ -203,7 +199,6 @@ ul.navbar-nav li a {
 
 .skill-progress[value]::-webkit-progress-value {
     background-image: 
-    /*linear-gradient(to right, #560000, #D8231E, #e6736f);*/
     -webkit-linear-gradient(-45deg, 
                                transparent 33%, rgba(0, 0, 0, .1) 33%, 
                                rgba(0,0, 0, .1) 66%, transparent 66%),
@@ -224,7 +219,6 @@ ul.navbar-nav li a {
 }
 
 .about-container {
-    /*border-left: 1px solid #eee;*/
     padding: 50px;
     margin-top: 100px;
     padding-top: 0px;
@@ -345,7 +339,6 @@ ul.navbar-nav li a {
 .button-container {
     height: 450px;
     margin-top: 100px;
-    /*border:1px solid white;*/
 }
 
 .gallery-container {
@@ -356,7 +349,6 @@ ul.navbar-nav li a {
 
 .gallery {
     padding: 0px;
-    /*border-top: 2px solid #678776;*/
 }
 
 .gallery div {
@@ -459,11 +451,9 @@ ul.navbar-nav li a {
     border:2px solid;
     border-radius:3px;
     z-index:-1;
-    /*animation:leftRotate 1s infinite;*/
 }
 
 .button-rotate:hover {
-    /*border:none;*/
     width:150px;
     height:150px;
     word-spacing:0px;
@@ -496,4 +486,25 @@ ul.navbar-nav li a {
     background-color: #678776;
     margin-top: 100px;
     border-top: 1px solid #93A096;
+}
+
+.playGame-header h2{
+    font-size: 100px;
+    font-family: 'Press Start 2P', cursive;
+    color: #E95E3D;
+    text-shadow: 
+        -1px -1px 0 #fff,
+        1px -1px 0 #fff,
+        1px 1px 0 #fff,
+        1px -1px 0 #fff;
+}
+
+.playGame {
+    margin-top: 100px;
+}
+
+#breakerGame {
+    width: 100%;
+    height: 720px;
+    background-color: black;
 }

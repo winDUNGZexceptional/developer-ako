@@ -44,4 +44,93 @@ $(function() {
 			$('#reward').show();
 		}
 	})
+
+	// breaker game
+	$("#breakerGame").ready(function(){
+		// var canvas = $("#breakerGame");
+		// var ctx = canvas.get(0).getContext("2d");
+		var canvas = document.getElementById("breakerGame");
+		var ctx = canvas.getContext('2d');
+		var ball = Math.PI*2;
+		var x = (canvas.width)/2;
+		var y = canvas.height-30;
+		console.log(y);
+		var dx = 2;
+		var dy = -2;
+		var ballRadius = 5;
+		var paddleHeight = 10;
+		var paddleWidth = 75;
+		var paddleX = (canvas.width-paddleWidth)
+		var leftKey = false;
+		var rightKey = false;
+		var set = setInterval(draw, 10);
+
+		document.addEventListener("keydown", keyDownHandler, false);
+		document.addEventListener("keyup", keyUpHandler, false);
+
+		function keyDownHandler(e) {
+			if(e.keyCode == 39) 
+				rightKey = true;
+			else if(e.keyCode == 37)
+				leftKey = true;
+		}
+
+		function keyUpHandler(e) {
+			if(e.keyCode == 39) 
+				rightKey = false;
+			else if(e.keyCode == 37)
+				leftKey = false;
+		}
+
+		function pamato() {
+			ctx.beginPath();
+			ctx.arc(x,y,ballRadius,0,ball,false);
+			ctx.fillStyle = "white";
+			ctx.fill();
+			ctx.closePath();
+		}
+
+		function player() {
+			ctx.beginPath();
+			ctx.rect(paddleX, canvas.height-paddleHeight, paddleWidth, paddleHeight);
+			ctx.fillStyle = "white";
+			ctx.fill();
+			ctx.closePath();
+		}
+
+		function draw () {
+			ctx.clearRect(0,0,canvas.width,canvas.height);
+			pamato();
+			player();
+
+			if(y + dy < ballRadius)
+				dy = -dy
+			else if (y + dy > canvas.height-(ballRadius*2)) {
+				if(x > paddleX && x < paddleX + paddleWidth) {
+					dy = -dy;
+				} else {
+					// alert("You Lose.");
+					clearInterval(set);
+				}
+			}
+
+			if(x + dx < ballRadius || x + dx > canvas.width-ballRadius) {
+				dx = -dx
+			}
+
+			if(rightKey == true && paddleX+paddleWidth < canvas.width) {
+				paddleX += 7
+			}
+
+			if(leftKey == true && paddleX > 0) {
+				paddleX -= 7
+			}
+
+			x += dx;
+			y += dy;
+
+		}
+
+		set;
+	})
 })
