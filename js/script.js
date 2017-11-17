@@ -3,7 +3,7 @@ $(function() {
 	$(window).scroll(function() {
 		var scroll = $(window).scrollTop();
 		
-		if(scroll >= 500) {
+		if(scroll >= 700) {
 			$('.navbar').addClass('scrolled-nav');
 			$(".svg-logo").addClass('nav-logo');
 		} else {
