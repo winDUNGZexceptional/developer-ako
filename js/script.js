@@ -1,5 +1,16 @@
 $(function() {
 
+	// image distribution
+	var html = $(document).width();
+	if(html <= 400) {
+		var childrenCount = $("#gallery").children().length;
+		var child = $("#galery").children(".hidden-xs")
+		for(i=0; i<childrenCount; i++) {
+
+		}
+	}
+
+	// navigation transform
 	var scroll = 0;
 	$(window).scroll(function() {
 		var scroll = $(window).scrollTop();
