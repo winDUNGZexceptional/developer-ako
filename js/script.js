@@ -1,4 +1,5 @@
 $(function() {
+
 	var scroll = 0;
 	$(window).scroll(function() {
 		var scroll = $(window).scrollTop();
@@ -54,7 +55,6 @@ $(function() {
 		var ball = Math.PI*2;
 		var x = (canvas.width)/2;
 		var y = canvas.height-30;
-		console.log(y);
 		var dx = 2;
 		var dy = -2;
 		var ballRadius = 5;

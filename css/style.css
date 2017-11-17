@@ -173,7 +173,7 @@ ul.navbar-nav li a {
     border-left: 20px solid white;
     border-top: 20px solid  transparent;
     border-bottom: 20px solid  transparent;
-    right: -3%;
+    right: -20px;
     top: 28%;
 }
 
@@ -346,7 +346,7 @@ ul.navbar-nav li a {
 .projects-header h2 {
     font-size: 100px;
     font-family: 'Press Start 2P', cursive;
-    color: #E95E3D;
+    color: #EE804E;
     text-shadow: 
         -1px -1px 0 #fff,
         1px -1px 0 #fff,
@@ -357,6 +357,7 @@ ul.navbar-nav li a {
 
 .projects-header h2:before {
     content: "PROJECTS";
+    color: #E95E3D;
     font-family: 'Press Start 2P', cursive;
     position: absolute;
     top: 55%;
@@ -465,7 +466,7 @@ ul.navbar-nav li a {
 .button-float:after {
     content:"";
     position:absolute;
-    width:80%;
+    width:90%;
     height: 1px;
     bottom:-20px;
     left:50%;
@@ -486,8 +487,12 @@ ul.navbar-nav li a {
     50%{
         bottom:-12px;
         box-shadow:3px 10px 8px rgba(0,0,0,.9);
+        width: 100%;
     }
-    100%{bottom:-20px;}
+    100%{
+        bottom:-20px;
+        width: 90%;
+    }
 }
 
 .button-rotate {
@@ -563,4 +568,5 @@ ul.navbar-nav li a {
     width: 100%;
     height: 720px;
     background-color: black;
+    transition: all 0.5s;
 }
