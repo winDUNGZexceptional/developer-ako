@@ -106,11 +106,18 @@ $(function() {
 			if(y + dy < ballRadius)
 				dy = -dy
 			else if (y + dy > canvas.height-(ballRadius*2)) {
-				if(x > paddleX && x < paddleX + paddleWidth) {
+				if(x >= paddleX && x < paddleX + paddleWidth) {
 					dy = -dy;
-				} else {
+					// custom
+					dy--;
+					// dx++;
+				} else if(y+dy > canvas.height+ballRadius) {
 					// alert("You Lose.");
 					clearInterval(set);
+				} else if(x == paddleX && x < canvas.height) {
+					dy = -dy;
+					dy += 10;
+					// dx++;
 				}
 			}
 

@@ -50,6 +50,11 @@ main {
         1px 1px 0 #fff,
         1px -1px 0 #fff;
     cursor: crosshair;
+    transition: all 0.5s;
+}
+
+.header-head span:hover {
+    color: #EE804E;
 }
 
 .press2play-container,
@@ -69,6 +74,26 @@ main {
 
 .header-head {
     margin-bottom: 100px;
+}
+
+.tag-line {
+    font-size: 18px;
+}
+
+.social-media a i {
+    font-size: 25px;
+    letter-spacing: 10px;
+    color: #E95E3D;
+    text-shadow: 
+        -1px -1px 0 #000,
+        1px -1px 0 #000,
+        1px 1px 0 #000,
+        1px -1px 0 #000;
+    transition: all 0.5s;
+}
+
+.social-media a i:hover {
+    color:#EE804E;
 }
 
 .navbar {
@@ -489,7 +514,7 @@ ul.navbar-nav li a {
 }
 
 .playGame-header h2{
-    font-size: 100px;
+    font-size: 80px;
     font-family: 'Press Start 2P', cursive;
     color: #E95E3D;
     text-shadow: 
