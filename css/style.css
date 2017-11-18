@@ -779,6 +779,12 @@ ul.navbar-nav li a {
     }
 
     .button.button-rotate {
-        width: 150px;
+        width: 300px;
+    }
+
+    .button.button-rotate:hover:after ,
+    .button.button-rotate:hover:before {
+        width: 200px;
+        height: 200px;
     }
 }
