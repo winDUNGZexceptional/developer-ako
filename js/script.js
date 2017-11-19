@@ -15,7 +15,7 @@ $(function() {
 	$(window).scroll(function() {
 		var scroll = $(window).scrollTop();
 		
-		if(scroll >= 700) {
+		if(scroll >= 800) {
 			$('.navbar').addClass('scrolled-nav');
 			$(".svg-logo").addClass('nav-logo');
 		} else {
@@ -24,6 +24,7 @@ $(function() {
 		}
 	})
 
+	// viewproject mod
 	$('.view-project').mouseover(function(){
 		var image = $(this).attr('content');
 
@@ -45,6 +46,7 @@ $(function() {
 			})
 	})
 
+	// span press2play
 	var	count = $('.press2play-container').children().length;
 	$('#reward').hide();
 	$('.press2play-container').on("click", ".press2play", function() {

@@ -39,7 +39,7 @@ main {
 }
 
 .header-container {
-    height: 720px;
+    min-height: 720px;
 }
 
 .header-head {
@@ -111,7 +111,7 @@ main {
     height: 55px;
     transition: all 0.5s;
     overflow: hidden;
-    margin-top: 100px;
+    margin-top: 25px;
 }
 
 .navbar h3 {
