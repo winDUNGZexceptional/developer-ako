@@ -14,15 +14,45 @@ $(function() {
 	var scroll = 0;
 	$(window).scroll(function() {
 		var scroll = $(window).scrollTop();
+		console.log(scroll);
 		
-		if(scroll >= 800) {
+		if(scroll >= 595) {
 			$('.navbar').addClass('scrolled-nav');
+			$(".navbar").addClass("scroll-height-up");
 			$(".svg-logo").addClass('nav-logo');
+
+			$("#navigator").mouseover(function(){
+				$(".navbar").removeClass("scroll-height-up");
+				$(".svg-logo").removeClass('nav-logo');
+			})
+
+			$("#navigator").mouseout(function(){
+				$(".navbar").addClass("scroll-height-up");
+				$(".svg-logo").addClass('nav-logo');
+			})
 		} else {
 			$('.navbar').removeClass('scrolled-nav');
+			$(".navbar").removeClass("scroll-height-up");
 			$(".svg-logo").removeClass('nav-logo');
+
+			$("#navigator").off("mouseover");
+			$("#navigator").off("mouseout");
 		}
 	})
+
+	// smooth anchor
+	$("a").click(function(){
+		if(this.hash !== "") {
+			event.preventDefault();
+			var hash = this.hash;
+			
+			$("html, body").animate({
+				scrollTop: $(hash).offset().top
+			}, 600, function(){
+				window.location.hash = hash;
+			})
+		}
+	});
 
 	// viewproject mod
 	$('.view-project').mouseover(function(){

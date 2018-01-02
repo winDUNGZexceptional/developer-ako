@@ -18,7 +18,7 @@ main {
 .logo {
     height:400px;
     width:400px;
-    margin:40px auto;
+    margin:20px auto;
     position: relative;
 }
 
@@ -39,11 +39,12 @@ main {
 }
 
 .header-container {
-    min-height: 720px;
+    min-height: 500px;
 }
 
 .header-head {
-    margin-top: 100px;
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
 
 .header-head span,
@@ -51,7 +52,7 @@ main {
     color: #E95E3D;
     text-transform: uppercase;
     font-family: 'Press Start 2P', cursive;
-    font-size:50px;
+    font-size:45px;
     text-shadow: 
         -1px -1px 0 #fff,
         1px -1px 0 #fff,
@@ -73,15 +74,11 @@ main {
 
 .header-head h1 {
     letter-spacing:0px;
-}
+ }
 
 .header-head p {
     color: #0B1127;
     letter-spacing: 1px;
-}
-
-.header-head {
-    margin-bottom: 100px;
 }
 
 .tag-line {
@@ -148,11 +145,18 @@ main {
 .scrolled-nav {
     position:fixed;
     top: 0px;
-    width: 100%;
+    /*width: 100%;*/
     z-index: 999;
-    height: 100px;
     line-height: 100px;
     margin-top: 0px;
+}
+
+.scroll-height-up {
+    height: 100px;
+}
+
+.scroll-height-down {
+    height: 50px;
 }
 
 ul.navbar-nav li a {
