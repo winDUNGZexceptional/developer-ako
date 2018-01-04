@@ -14,7 +14,7 @@ $(function() {
 	var scroll = 0;
 	$(window).scroll(function() {
 		var scroll = $(window).scrollTop();
-		console.log(scroll);
+		// console.log(scroll);
 		
 		if(scroll >= 595) {
 			$('.navbar').addClass('scrolled-nav');
@@ -78,13 +78,21 @@ $(function() {
 
 	// span press2play
 	var	count = $('.press2play-container').children().length;
+	var deviceWidth = $(document).width();
+	var limit = 0;
 	$('#reward').hide();
 	$('.press2play-container').on("click", ".press2play", function() {
 		count--;
 		$(this).remove();
+		// console.log(count);
 
-		if(count == 0) {
-			$('.press2play-container').html("<h1>YOU WIN!</h1>");
+		if(deviceWidth <= 360)
+			limit = 7;
+		else if (deviceWidth > 360)
+			limit = 0;
+
+		if(count == limit) {
+			$('.press2play-container').html("<h1 style='font-size:40px;'>YOU WIN!</h1>");
 			$('#reward').show();
 		}
 	})

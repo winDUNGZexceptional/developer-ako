@@ -601,6 +601,36 @@ ul.navbar-nav li a {
         height: 920px;
     }
 
+    .press2play:nth-child(1),
+    .press2play:nth-child(2),
+    .press2play:nth-child(3),
+    .press2play:nth-child(4) {
+        font-size: 60px;
+    }
+
+    .press2play:nth-child(7),
+    .press2play:nth-child(8),
+    .press2play:nth-child(9),
+    .press2play:nth-child(10),
+    .press2play:nth-child(11),
+    .press2play:nth-child(12),
+    .press2play:nth-child(13),
+    .press2play:nth-child(14),
+    .press2play:nth-child(15),
+    .press2play:nth-child(16) {
+        font-size: 28px;
+    }
+
+    .press2play:nth-child(22),
+    .press2play:nth-child(23),
+    .press2play:nth-child(24),
+    .press2play:nth-child(25),
+    .press2play:nth-child(26),
+    .press2play:nth-child(27),
+    .press2play:nth-child(28) {
+        font-size: 40px;
+    }
+
     .header-container {
         overflow: hidden;
         padding: 0px;
