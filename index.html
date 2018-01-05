@@ -61,7 +61,7 @@
                             <span class="press2play">o</span>
                             <span class="press2play">h</span>
                             <span class="press2play">n</span>
-                            <span class="press2play hidden-xs">&nbsp;</span><br class="visible-xs">
+                            <span class="press2play hidden-xs hidden-sm">&nbsp;</span><br class="visible-xs visible-sm">
                             <span class="press2play">f</span>
                             <span class="press2play">l</span>
                             <span class="press2play">o</span>
@@ -72,10 +72,10 @@
                             <span class="press2play">i</span>
                             <span class="press2play">n</span>
                             <span class="press2play">o</span>
-                            <span class="press2play hidden-xs">&nbsp;</span><br class="visible-xs">
-                            <span class="press2play hidden-xs">s</span>
-                            <span class="press2play hidden-xs">.</span>
-                            <span class="press2play hidden-xs">&nbsp;</span>
+                            <span class="press2play hidden-xs hidden-sm">&nbsp;</span><br class="visible-xs visible-sm">
+                            <span class="press2play hidden-xs hidden-sm">s</span>
+                            <span class="press2play hidden-xs hidden-sm">.</span>
+                            <span class="press2play hidden-xs hidden-sm">&nbsp;</span>
                             <span class="press2play">d</span>
                             <span class="press2play">u</span>
                             <span class="press2play">n</span>
@@ -110,6 +110,11 @@
                     <nav class="navbar navbar-default" id="navigator">
                         <div class="navbar-header">
                             <!-- hide using margin minus then show on scroll -->
+                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navCollapse">
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
                             <div class="navbar-brand">
                                 <svg class="svg-logo" height="50" width="50">
                                     <circle cx="50" cy="50" r="45" stroke="#678776" stroke-width="2" fill="transparent"></circle>
@@ -130,16 +135,18 @@
                                 </svg>
                             </div>
 
-                            <ul class="nav navbar-nav">
-                                <li><a href="#home">HOME</a></li>
-                                <li><a href="#about">ABOUT</a></li>
-                                <li><a href="#skills">SKILLS</a></li>
-                                <li><a href="#projects">PROJECTS</a></li>
-                                <li><a href="#gallery">GALLERY</a></li>
-                                <li><a href="pdf/creative-resume.pdf" download>DOWNLOAD CV</a></li>
-                            </ul>
+                            <!-- <div class="collapse navbar-collapse" id="navCollapse"> -->
+                                <ul class="collapse navbar-collapse nav navbar-nav" id="navCollapse">
+                                    <li><a href="#home"><span class="glyphicon glyphicon-home"></span>&nbsp; HOME</a></li>
+                                    <li><a href="#about"><span class="glyphicon glyphicon-user"></span>&nbsp; ABOUT</a></li>
+                                    <li><a href="#skills"><span class="glyphicon glyphicon-cog"></span>&nbsp; SKILLS</a></li>
+                                    <li><a href="#projects"><span class="glyphicon glyphicon-book"></span>&nbsp; PROJECTS</a></li>
+                                    <li><a href="#gallery"><span class="glyphicon glyphicon-film"></span>&nbsp; GALLERY</a></li>
+                                    <li><a href="pdf/creative-resume.pdf" download><span class="glyphicon glyphicon-save"></span>&nbsp; DOWNLOAD CV</a></li>
+                                </ul>
+                            <!-- </div> -->
                         </div>
-                        <div class="head-text col-xs-10"><h3>John Florentino S. Dunglao</h3></div>
+                        <div class="head-text hidden-xs hidden-sm col-md-10"><h3>John Florentino S. Dunglao</h3></div>
                     </nav>
                 </div>
             </div>

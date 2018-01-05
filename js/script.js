@@ -12,33 +12,47 @@ $(function() {
 
 	// navigation transform
 	var scroll = 0;
-	$(window).scroll(function() {
-		var scroll = $(window).scrollTop();
-		// console.log(scroll);
-		
-		if(scroll >= 595) {
-			$('.navbar').addClass('scrolled-nav');
-			$(".navbar").addClass("scroll-height-up");
-			$(".svg-logo").addClass('nav-logo');
-
-			$("#navigator").mouseover(function(){
-				$(".navbar").removeClass("scroll-height-up");
-				$(".svg-logo").removeClass('nav-logo');
-			})
-
-			$("#navigator").mouseout(function(){
+	if($(document).width() > 760) {
+		$(window).scroll(function() {
+			var scroll = $(window).scrollTop();
+			// console.log(scroll);
+			
+			if(scroll >= 595) {
+				$('.navbar').addClass('scrolled-nav');
 				$(".navbar").addClass("scroll-height-up");
 				$(".svg-logo").addClass('nav-logo');
-			})
-		} else {
-			$('.navbar').removeClass('scrolled-nav');
-			$(".navbar").removeClass("scroll-height-up");
-			$(".svg-logo").removeClass('nav-logo');
 
-			$("#navigator").off("mouseover");
-			$("#navigator").off("mouseout");
-		}
-	})
+				$("#navigator").mouseover(function(){
+					$(".navbar").removeClass("scroll-height-up");
+					$(".svg-logo").removeClass('nav-logo');
+				})
+
+				$("#navigator").mouseout(function(){
+					$(".navbar").addClass("scroll-height-up");
+					$(".svg-logo").addClass('nav-logo');
+				})
+			} else {
+				$('.navbar').removeClass('scrolled-nav');
+				$(".navbar").removeClass("scroll-height-up");
+				$(".svg-logo").removeClass('nav-logo');
+
+				$("#navigator").off("mouseover");
+				$("#navigator").off("mouseout");
+			}
+		})
+	} else {
+		$(".navbar").css({"height" : "initial"});
+		$(window).scroll(function() {
+			var scroll = $(window).scrollTop();
+			// console.log(scroll);
+			
+			if(scroll >= 600) {
+				$('.navbar').addClass('scrolled-nav');
+			} else {
+				$('.navbar').removeClass('scrolled-nav');
+			}
+		})
+	}
 
 	// smooth anchor
 	$("a").click(function(){
@@ -80,16 +94,17 @@ $(function() {
 	var	count = $('.press2play-container').children().length;
 	var deviceWidth = $(document).width();
 	var limit = 0;
+	console.log(deviceWidth);
 	$('#reward').hide();
 	$('.press2play-container').on("click", ".press2play", function() {
 		count--;
 		$(this).remove();
-		// console.log(count);
+		 console.log(count);
 
-		if(deviceWidth <= 360)
+		if(deviceWidth <= 800)
 			limit = 7;
-		else if (deviceWidth > 360)
-			limit = 0;
+		else if (deviceWidth > 800)
+			limit = 2;
 
 		if(count == limit) {
 			$('.press2play-container').html("<h1 style='font-size:40px;'>YOU WIN!</h1>");
