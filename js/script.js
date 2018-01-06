@@ -48,9 +48,15 @@ $(function() {
 			
 			if(scroll >= 600) {
 				$('.navbar').addClass('scrolled-nav');
+				$("#back").show();
 			} else {
 				$('.navbar').removeClass('scrolled-nav');
+				$("#back").hide();
 			}
+		})
+		$("#collapseBtn").click(function(){
+			$(".svg-logo").toggleClass('nav-logo');
+			$(".nav-logo").css({"margin-left" : "-55px", "margin-top" : "85px"})
 		})
 	}
 
