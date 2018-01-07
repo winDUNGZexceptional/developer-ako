@@ -616,7 +616,7 @@ ul.navbar-nav li a {
 }
 
 /*MOBILE*/
-@media only screen and (max-width:400px) {
+@media only screen and (max-width:420px) {
     #home {
         min-height: 700px;
     }
@@ -728,9 +728,9 @@ ul.navbar-nav li a {
 }
 
 /*TO TABLETS*/
-@media only screen and (min-width:401px) and (max-width: 760px) {
+@media only screen and (min-width:421px) and (max-width: 780px) {
     #home {
-        min-height: 920px;
+        min-height: 700px;
     }
 
     .press2play:nth-child(1),
@@ -766,7 +766,7 @@ ul.navbar-nav li a {
     .header-container {
         overflow: hidden;
         padding: 0px;
-        height: 860px;
+        height: 700px;
     }
 
     .logo {

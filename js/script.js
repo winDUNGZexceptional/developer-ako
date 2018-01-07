@@ -100,12 +100,12 @@ $(function() {
 	var	count = $('.press2play-container').children().length;
 	var deviceWidth = $(document).width();
 	var limit = 0;
-	console.log(deviceWidth);
+	// console.log(deviceWidth);
 	$('#reward').hide();
 	$('.press2play-container').on("click", ".press2play", function() {
 		count--;
 		$(this).remove();
-		 console.log(count);
+		 // console.log(count);
 
 		if(deviceWidth <= 800)
 			limit = 7;
