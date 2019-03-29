@@ -59,6 +59,8 @@ main {
 
 .header-container {
     min-height: 500px;
+    padding: 0px;
+    background-image: url('https://i.redd.it/m6ptifyhde321.gif');
 }
 
 .header-head {
