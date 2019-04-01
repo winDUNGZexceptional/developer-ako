@@ -1,0 +1,86 @@
+
+.about-container {
+    padding: 50px;
+    margin-top: 100px;
+    padding-top: 0px;
+}
+
+.about-container h3 {
+    color: #E95E3D;
+    text-transform: uppercase;
+    font-family: 'Press Start 2P', cursive;
+    font-size:38px;
+    text-shadow: 
+        -1px -1px 0 #fff,
+        1px -1px 0 #fff,
+        1px 1px 0 #fff,
+        1px -1px 0 #fff;
+}
+
+.about {
+    padding: 0px 10px;
+}
+
+.about-description {
+    padding: 10px;
+    margin-top:30px;
+    border: none;
+    border-radius: 15px;
+    background-color:#EE804E;
+    color: white;
+    position: relative;
+}
+
+.about-description:before {
+    content: "";
+    border-bottom: 15px solid #EE804E;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    position:absolute;
+    top: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.about-description:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    bottom: 0%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-bottom: 1px solid transparent;
+    box-shadow: 0px 30px 20px rgba(0,0,0,1);
+}
+
+
+
+.about-image {
+    margin-bottom: 20px;
+    border: 2px solid white;
+    padding: 0px;
+    position: relative;
+}
+
+.about-image:before,
+.about-image:after {
+    content: "";
+    position: absolute;
+    width: 105%;
+    height: 105%;
+    border: 2px solid white;
+}
+
+.about-image:before {
+    top: -5%;
+    left: -5%;
+}
+
+.about-image:after {
+    right: -5%;
+    bottom: -5%;
+}
+
+.about-description p {
+    text-indent: 20px;
+}

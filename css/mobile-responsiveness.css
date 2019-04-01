@@ -1,0 +1,146 @@
+/*TO TABLETS*/
+@media only screen and (min-width:421px) and (max-width: 780px) {
+    #home {
+        min-height: 700px;
+    }
+
+    .press2play:nth-child(1),
+    .press2play:nth-child(2),
+    .press2play:nth-child(3),
+    .press2play:nth-child(4) {
+        font-size: 60px;
+    }
+
+    .press2play:nth-child(7),
+    .press2play:nth-child(8),
+    .press2play:nth-child(9),
+    .press2play:nth-child(10),
+    .press2play:nth-child(11),
+    .press2play:nth-child(12),
+    .press2play:nth-child(13),
+    .press2play:nth-child(14),
+    .press2play:nth-child(15),
+    .press2play:nth-child(16) {
+        font-size: 28px;
+    }
+
+    .press2play:nth-child(22),
+    .press2play:nth-child(23),
+    .press2play:nth-child(24),
+    .press2play:nth-child(25),
+    .press2play:nth-child(26),
+    .press2play:nth-child(27),
+    .press2play:nth-child(28) {
+        font-size: 40px;
+    }
+
+    .header-container {
+        overflow: hidden;
+        padding: 0px;
+        height: 700px;
+    }
+
+    .logo {
+        margin-top: 0px;
+    }
+
+    .header-head {
+        margin-top: 0px;
+    }
+
+    .header-head span {
+        font-size: 50px;
+    }
+
+    .social-media {
+        font-size:10px;
+    }
+
+    main {
+        margin-top: 0px;
+    }
+
+    .skills-container {
+        margin-top: 0px;
+    }
+
+    .skills-header h2 {
+        font-size: 90px;
+    }
+
+    .skills h3 {
+        font-size:45px;
+    }
+
+    .skill-type {
+        font-size: 27px;
+    }
+
+    .skills {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    .skill-progress[value]:after {
+        content: attr(value) '%';
+        font-size: 20px;
+    }
+
+    .skills-container:after {
+        content: "";
+        position: absolute;
+        border-left: 30px solid transparent;
+        border-top: 30px solid  white;
+        border-bottom: 30px solid  transparent;
+        border-right: 30px solid  transparent;
+        right: 40%;
+        top: 100%;
+        transform:translateX(-50%);
+    }
+
+    .about-container {
+        margin-top: 50px;
+        padding: 20px;
+    }
+
+    .about-container h3 {
+        font-size:110px;
+    }
+
+    .about-description {
+        margin-top: 50px;
+    }
+
+    .about-description p {
+        text-indent: 50px;
+        font-size: 32px;
+    }
+
+    .projects-header {
+        margin-top: 20px;
+    }
+
+    .projects-header h2 {
+        font-size: 90px;
+    }
+
+    .playGame-header h2 {
+        font-size: 10px;
+    }
+
+    .button {
+        height: 90px;
+        width: 500px;
+        font-size: 30px;
+    }
+
+    .button.button-rotate {
+        width: 300px;
+    }
+
+    .button.button-rotate:hover:after ,
+    .button.button-rotate:hover:before {
+        width: 200px;
+        height: 200px;
+    }
+}

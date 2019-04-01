@@ -1,0 +1,93 @@
+.skills-container {
+    background-color: #EE804E;
+    padding: 10px;
+    border:2px solid white;
+    margin-top: 100px;
+    border-radius: 3px;
+}
+
+.skills-container:after {
+    content: "";
+    position: absolute;
+    border-left: 20px solid white;
+    border-top: 20px solid  transparent;
+    border-bottom: 20px solid  transparent;
+    right: -20px;
+    top: 28%;
+}
+
+.skills-container:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    bottom: 0%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-bottom: 1px solid transparent;
+    box-shadow: 0px 30px 20px rgba(0,0,0,1);
+}
+
+.skills {
+    min-height: 560px;
+    border: 5px dashed white;
+    padding-bottom: 30px;
+    position: relative;
+    border-radius: 3px;
+    color: white;
+}
+
+.skills-header h2 {
+    color: white;
+    font-size: 75px;
+    font-family: 'Bevan', cursive;
+    text-shadow: 
+        -1px -1px 0 #000,
+        1px -1px 0 #000,
+        1px 1px 0 #000,
+        1px -1px 0 #000;
+}
+
+.skills h3 {
+    color: white;
+    font-family: 'Fredoka One', cursive;
+    text-shadow: 
+        -1px -1px 0 #000,
+        1px -1px 0 #000,
+        1px 1px 0 #000,
+        1px -1px 0 #000;
+}
+
+.skill-progress[value] {
+    -webkit-appearance:none;
+    appearance:none;
+    width: 100%;
+    height: 40px;
+    box-shadow:0px 5px 5px rgba(0,0,0,0.25);
+}
+
+.skill-progress[value]::-webkit-progress-bar{
+    background-color: #eee;
+    border-radius:3px;
+    box-shadow: 0px 3px 5px rgba(0,0,0,0.25) inset;
+}
+
+.skill-progress[value]::-webkit-progress-value {
+    background-image: 
+    -webkit-linear-gradient(-45deg, 
+                               transparent 33%, rgba(0, 0, 0, .1) 33%, 
+                               rgba(0,0, 0, .1) 66%, transparent 66%),
+    -webkit-linear-gradient(top, 
+                           rgba(255, 255, 255, .25), 
+                           rgba(0, 0, 0, .25)),
+    -webkit-linear-gradient(left, #678776, #93A096, #8CC0B6);
+
+    border-radius: 3px;
+    position: relative;
+}
+
+.skill-progress[value]:after {
+    content: attr(value) '%';
+    position: absolute; 
+    right:0;
+    top:0;
+}

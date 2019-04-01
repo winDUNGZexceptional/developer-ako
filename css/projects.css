@@ -1,0 +1,55 @@
+
+
+.projects-header {
+    margin-top: 100px;
+}
+
+.projects-header h2 {
+    font-size: 100px;
+    font-family: 'Press Start 2P', cursive;
+    color: #EE804E;
+    text-shadow: 
+        -1px -1px 0 #fff,
+        1px -1px 0 #fff,
+        1px 1px 0 #fff,
+        1px -1px 0 #fff;
+    position: relative;
+}
+
+.projects-header h2:before {
+    content: "PROJECTS";
+    color: #E95E3D;
+    font-family: 'Press Start 2P', cursive;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform:translate(-50%, -50%);
+}
+
+.projects-header h2:after {
+    content: "";
+    width: 50%;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    position: absolute;
+    bottom: 3%;
+    left: 50%;
+    transform: translateX(-50%);
+    box-shadow: 5px 0px 10px rgba(0,0,0,0.8);
+}
+
+.projects-container {
+    padding:20px;
+    border:2px solid white;
+    /*background-color: #EE804E;*/
+}
+
+.projects {
+    padding: 10px;
+    border: 5px dashed white;
+    height: 720px;
+    transition:all 0.5s ease;
+    background-color: none;
+    background-image:url('../images/indent.jpg');
+    background-position: 50%, 50%;
+    box-shadow: 5px 0px 50px rgba(0,0,0,0.7) inset;
+}
